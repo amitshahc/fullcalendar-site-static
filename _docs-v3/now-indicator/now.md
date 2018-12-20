@@ -21,6 +21,8 @@ You'll most likely want to calculate this with a server-side script and inject i
 ```php
 <?php
   $datetime = new DateTime('now', 'America/Chicago');
+  /*** PHP 7  ***/
+  // $datetime = new DateTime('now', new DateTimeZone($shop->timezone));
   $datetime_string = $datetime->format('c');
 ?>
 
